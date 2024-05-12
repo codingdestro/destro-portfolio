@@ -1,10 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { playfair } from "./fonts";
+import Navbar from "@/components/sections/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
+      <Navbar />
       <div>Hero section</div>
     </div>
   );

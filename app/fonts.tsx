@@ -8,4 +8,5 @@ export const raleway = Raleway({
 export const playfair = Playfair({
   subsets: ["latin"],
   display: "swap",
+  weight: ["500", "700", "900"],
 });
