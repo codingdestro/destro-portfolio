@@ -17,6 +17,9 @@ const config = {
       },
     },
     extend: {
+      height: {
+        section: "calc(100vh - 64px)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +54,7 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        redish: "#fc345c",
       },
       borderRadius: {
         lg: "var(--radius)",
