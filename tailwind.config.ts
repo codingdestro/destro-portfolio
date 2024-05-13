@@ -17,6 +17,9 @@ const config = {
       },
     },
     extend: {
+      minHeight: {
+        section: "calc(100vh - 64px)",
+      },
       height: {
         section: "calc(100vh - 64px)",
       },
