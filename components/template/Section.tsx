@@ -8,7 +8,7 @@ interface Props {
 }
 const Section = ({ heading, children, className, id }: Props) => {
   return (
-    <div className={`${className || "min-h-lvh"}`} id={id}>
+    <section className={`${className || "min-h-lvh"}`} id={id}>
       <div className="p-5 flex flex-col items-center">
         {/* Heading*/}
         <div className="text-center  border-b-2 w-[16rem]">
@@ -19,7 +19,7 @@ const Section = ({ heading, children, className, id }: Props) => {
         </div>
         {children}
       </div>
-    </div>
+    </section>
   );
 };
 

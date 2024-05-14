@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="h-section  ">
-      <div className="flex  translate-y-[200px] justify-center gap-x-[12rem]">
+    <section id="#home" className="h-lvh  ">
+      <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
         <div className="flex flex-col gap-y-5 ">
           <div>
             <h1 className={`${playfair.className} text-[56px]`}>
@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
