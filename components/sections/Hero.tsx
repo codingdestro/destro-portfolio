@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="#home" className="h-lvh  ">
+    <section id="#home" className="min-h-section  ">
       <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
         <div className="flex flex-col gap-y-5 ">
           <div>
