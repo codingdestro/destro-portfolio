@@ -3,10 +3,12 @@ import { playfair } from "@/app/fonts";
 interface Props {
   heading: string;
   children: JSX.Element | JSX.Element[];
+  className?: string;
+  id: string;
 }
-const Section = ({ heading, children }: Props) => {
+const Section = ({ heading, children, className, id }: Props) => {
   return (
-    <div className="min-h-lvh">
+    <div className={`${className || "min-h-lvh"}`} id={id}>
       <div className="p-5 flex flex-col items-center">
         {/* Heading*/}
         <div className="text-center  border-b-2 w-[16rem]">
