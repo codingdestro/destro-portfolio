@@ -1,0 +1,67 @@
+export const skills = [
+  {
+    name: "Frontend Development",
+    tags: [
+      "React.js",
+      "Next.js",
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "CSS-in-JS (styled-components, Emotion)",
+      "State Management (Redux-Tookit, Zustand)",
+      "UI Libraries (Material-UI, Tailwind CSS)",
+      "Testing (Jest, React Testing Library, Cypress)",
+    ],
+  },
+  {
+    name: "Backend Development",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "SQL (PostgreSQL,MySQL)",
+      "NoSQL (MongoDB)",
+      "ORM/ODM (Sequelize, Prisma, Mongoose)",
+      "RESTful APIs",
+      "WebSockets",
+      "Authentication (JWT, OAuth)",
+    ],
+  },
+  {
+    name: "Web3 Development",
+    tags: [
+      "Ethereum",
+      "Solidity",
+      "Smart Contracts",
+      "Web3.js",
+      "Ethers.js",
+      "Decentralized Storage (IPFS)",
+      "Blockchain Integration",
+      "Wallet Integration (MetaMask, WalletConnect)",
+      "Smart Contract Frameworks (Truffle, Hardhat)",
+    ],
+  },
+  {
+    name: "DevOps and Deployment",
+    tags: [
+      "CI/CD (GitHub Actions, Jenkins, CircleCI)",
+      "Cloud Platforms (AWS, Google Cloud, Azure)",
+      "Docker",
+      "Serverless (AWS Lambda, Vercel, Netlify)",
+      "Version Control (Git, GitHub, GitLab)",
+    ],
+  },
+  {
+    name: "Other Skills",
+    tags: [
+      "Performance Optimization",
+      "SEO",
+      "Accessibility (WCAG)",
+      "Agile/Scrum",
+      "Collaboration Tools (JIRA, Trello, Slack)",
+      "Strong problem-solving",
+      "Communication",
+      "Teamwork",
+    ],
+  },
+];

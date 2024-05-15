@@ -7,12 +7,12 @@ import Section from "../template/Section";
 
 const Projects = () => {
   return (
-    <Section heading="My Projects" id="projects">
+    <Section heading="My Projects" id="projects" className="">
       <div className="w-full flex flex-col items-center h-full gap-y-32 mt-12">
         {projectData.map((project: ProjectsType, idx: number) => (
           <div key={idx}>
             <Card
-              id={idx + 1}
+              id={idx}
               title={project.name}
               desc={project.desc}
               point={project.points}

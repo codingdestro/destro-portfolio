@@ -5,6 +5,7 @@ import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
 import Education from "@/components/sections/Education";
 import About from "@/components/sections/projects/About";
+import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Education />
+      <Skills />
       <About />
     </div>
   );

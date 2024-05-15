@@ -17,7 +17,7 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <div
-      className={`border flex ${props.id % 2 == 0 && "flex-row-reverse"}  h-[18rem] items-center justify-between  rounded-[40px] shadow-lg w-[880px] overflow-hidden`}
+      className={`border flex ${props.id % 2 !== 0 && "flex-row-reverse"}  h-[18rem] items-center justify-between  rounded-[40px] gap-x-5 shadow-lg w-[880px] overflow-hidden`}
     >
       <div className="flex-1 ">
         <div className="pl-9 flex flex-col">
