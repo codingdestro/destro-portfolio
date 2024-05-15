@@ -6,11 +6,13 @@ import Projects from "@/components/sections/Projects";
 import Education from "@/components/sections/Education";
 import About from "@/components/sections/projects/About";
 import Skills from "@/components/sections/Skills";
+import Particle from "@/components/ui/particle";
 
 export default function Home() {
   return (
     <div className="">
       <Navbar />
+
       <Hero />
       <Projects />
       <Education />

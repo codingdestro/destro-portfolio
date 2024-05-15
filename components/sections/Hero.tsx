@@ -1,10 +1,14 @@
 import { playfair } from "@/app/fonts";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Particle from "../ui/particle";
 
 const Hero = () => {
   return (
     <section id="#home" className="min-h-section  ">
+      <div className="absolute z-0">
+        <Particle />
+      </div>
       <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
         <div className="flex flex-col gap-y-5 ">
           <div>
