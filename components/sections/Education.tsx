@@ -7,7 +7,7 @@ const Education = () => {
         <div className="border-b-2 flex p-3 justify-between">
           <div className="capitalize">
             <h3 className="font-semibold text-xl">b.tech CSE</h3>
-            <p>st. andrew's institute of Technology & management</p>
+            <p>st. andrew&apos;s institute of Technology & management</p>
           </div>
           <div>
             <p>2024-2028</p>

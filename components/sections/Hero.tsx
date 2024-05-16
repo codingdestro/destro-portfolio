@@ -14,7 +14,7 @@ const Hero = () => {
           <div>
             <h1 className={`${playfair.className} text-[56px]`}>
               HI, <br />
-              I'm <span className="text-redish font-bold">Mohd Anas</span>
+              I&apos;m <span className="text-redish font-bold">Mohd Anas</span>
             </h1>
             <p className="text-center">
               A full-stack web developer based in India

@@ -15,12 +15,12 @@ const About = () => {
     <Section id="about me" className="x" heading="About Me">
       <div className="flex w-full max-w-[1024px] px-5 py-9 items-start justify-between">
         <div className="break-words text-wrap  max-w-[30rem]">
-          <h3 className="text-lg font-semibold">Hi, I'm Mohd Anas,</h3>
+          <h3 className="text-lg font-semibold">Hi, I&apos;m Mohd Anas,</h3>
           <p className="text-sm text-slate-600">
             A dedicated full stack web developer. I specialize in creating
             dynamic, responsive web applications, blending front-end design with
-            back-end functionality. Let's connect and explore the world of web
-            development together!
+            back-end functionality. Let&apos;s connect and explore the world of
+            web development together!
           </p>
           <div className="flex items-center gap-x-4 mt-9">
             <Logo img="/github.png" url="//github.com/codingdestro" />
