@@ -4,7 +4,7 @@ import LinkButton from "../ui/linkButton";
 import { playfair, raleway } from "@/app/fonts";
 
 const Navbar = () => {
-  const links = ["home", "projects", "Skills", "about me"];
+  const links = ["home", "projects", "education", "skills", "about me"];
   return (
     <div className="w-full flex items-center justify-between py-3 px-5 bg-secondary">
       <div className={`text-2xl ${playfair.className} font-bold`}>
@@ -14,7 +14,7 @@ const Navbar = () => {
         {links.map((link: string, idx: number) => (
           <div key={idx}>
             <Button variant={"link"} className="capitalize">
-              {link}
+              <Link href={`#${link}`}>{link}</Link>
             </Button>
           </div>
         ))}

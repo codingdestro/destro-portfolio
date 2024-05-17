@@ -17,6 +17,9 @@ const config = {
       },
     },
     extend: {
+      minHeight: {
+        section: "calc(100vh - 64px)",
+      },
       height: {
         section: "calc(100vh - 64px)",
       },
@@ -70,10 +73,29 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        fadeInLeft: {
+          "0%": { opacity: "0", transform: "translateX(-50%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeInRight: {
+          "0%": { opacity: "0", transform: "translateX(50%)" },
+          "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(80%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        fadeZoomIn: {
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        fadeInLeft: "fadeInLeft 1s ease-out",
+        fadeInRight: "fadeInRight 1s ease-out",
+        fadeUp: "fadeUp 1.5s ease-out",
       },
     },
   },

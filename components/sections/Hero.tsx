@@ -1,16 +1,18 @@
 import { playfair } from "@/app/fonts";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Particle from "../ui/particle";
 
 const Hero = () => {
   return (
-    <div className="h-section  ">
-      <div className="flex  translate-y-[200px] justify-center gap-x-[12rem]">
+    <section id="#home" className="min-h-section  ">
+      <div className="absolute"></div>
+      <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
         <div className="flex flex-col gap-y-5 ">
           <div>
             <h1 className={`${playfair.className} text-[56px]`}>
               HI, <br />
-              I'm <span className="text-redish font-bold">Mohd Anas</span>
+              I&apos;m <span className="text-redish font-bold">Mohd Anas</span>
             </h1>
             <p className="text-center">
               A full-stack web developer based in India
@@ -22,16 +24,11 @@ const Hero = () => {
         </div>
         <div>
           <div className="h-[400px]  w-[400px] flex items-center justify-center">
-            <Image
-              src={"/ellipse.svg"}
-              width={400}
-              height={500}
-              alt="image bg ovel"
-            />
+            <img src={"/ellipse.svg"} alt="image bg ovel" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
