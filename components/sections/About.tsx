@@ -27,6 +27,7 @@ const About = () => {
             <Logo img="/linkedin.png" url="/" />
             <Logo img="/x.png" url="/" />
             <Logo img="/insta.png" url="/" />
+            <Logo img="/upwork.png" url="/" />
           </div>
         </div>
         <div>
