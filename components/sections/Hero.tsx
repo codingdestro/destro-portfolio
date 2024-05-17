@@ -6,7 +6,7 @@ import Particle from "../ui/particle";
 const Hero = () => {
   return (
     <section id="#home" className="min-h-section  ">
-      <div className="absolute z-0">
+      <div className="absolute">
         <Particle />
       </div>
       <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
@@ -26,12 +26,7 @@ const Hero = () => {
         </div>
         <div>
           <div className="h-[400px]  w-[400px] flex items-center justify-center">
-            <Image
-              src={"/ellipse.svg"}
-              width={400}
-              height={500}
-              alt="image bg ovel"
-            />
+            <img src={"/ellipse.svg"} alt="image bg ovel" />
           </div>
         </div>
       </div>

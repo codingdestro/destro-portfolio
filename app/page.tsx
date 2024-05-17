@@ -7,6 +7,7 @@ import Education from "@/components/sections/Education";
 import About from "@/components/sections/projects/About";
 import Skills from "@/components/sections/Skills";
 import Particle from "@/components/ui/particle";
+import ScrollDiv from "@/components/ui/scrollDiv";
 
 export default function Home() {
   return (

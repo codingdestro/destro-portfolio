@@ -63,6 +63,7 @@ const Particle = () => {
 
             if (distance < 200) {
               ctx.save();
+              ctx.strokeStyle = "#00000001";
               const opacity = 1 - distance / 100;
               ctx.globalAlpha = opacity;
               ctx.beginPath();
@@ -88,7 +89,7 @@ const Particle = () => {
     // Create particle array
     function init() {
       particlesArray = [];
-      const numberOfParticles = 80;
+      const numberOfParticles = (canvas.width * canvas.height) / 26000;
       for (let i = 0; i < numberOfParticles; i++) {
         const size = Math.random() * 10 + 1;
         const x = Math.random() * (innerWidth - size * 2) + size * 2;
@@ -101,6 +102,7 @@ const Particle = () => {
           new Particle(x, y, directionX, directionY, size, color),
         );
       }
+      ctx.strokeStyle = "#00000001";
     }
 
     // Animation loop

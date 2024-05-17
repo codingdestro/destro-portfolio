@@ -1,6 +1,7 @@
 import { playfair } from "@/app/fonts";
 import Section from "../template/Section";
 import { skills } from "@/data/skills";
+import ScrollDiv from "../ui/scrollDiv";
 
 const SkillSet = ({ tags }: { tags: string[] }) =>
   tags.map((tag: string, idx: number) => (
@@ -12,23 +13,29 @@ const SkillSet = ({ tags }: { tags: string[] }) =>
 const Skills = () => {
   return (
     <Section heading="My Skills" className="x" id="skills">
-      <div className="max-w-[1024px] p-5 flex flex-col gap-5">
+      <div className="max-w-[1024px] p-5 flex flex-col gap-5 overflow-hidden">
         {skills.map((skill: any, idx: number) => (
-          <div
+          <ScrollDiv
             key={idx}
-            className={`border rounded-lg p-5 shadow-md ${idx % 2 !== 0 && "text-right"}`}
+            animation={
+              idx % 2 !== 0 ? "animate-fadeInLeft " : "animate-fadeInRight"
+            }
           >
-            <h3
-              className={`capitalize ${playfair.className}  text-2xl font-semibold underline`}
-            >
-              {skill.name}
-            </h3>
             <div
-              className={` flex ${idx % 2 !== 0 && "justify-end"} flex-wrap gap-2 px-2 py-5`}
+              className={`border rounded-lg p-5 shadow-md ${idx % 2 !== 0 && "text-right"}`}
             >
-              <SkillSet tags={skill.tags} />
+              <h3
+                className={`capitalize ${playfair.className}  text-2xl font-semibold underline`}
+              >
+                {skill.name}
+              </h3>
+              <div
+                className={` flex ${idx % 2 !== 0 && "justify-end"} flex-wrap gap-2 px-2 py-5`}
+              >
+                <SkillSet tags={skill.tags} />
+              </div>
             </div>
-          </div>
+          </ScrollDiv>
         ))}
       </div>
     </Section>
