@@ -1,5 +1,24 @@
 import Section from "@/components/template/Section";
 import Link from "next/link";
+const contactInfo = [
+  {
+    link: "+91 9193-19-5759",
+    img: "/call.png",
+  },
+  {
+    link: "www.codingdestro.dev",
+    img: "/globe.png",
+  },
+
+  {
+    link: "codingdestro@gmail.com",
+    img: "/mail.png",
+  },
+  {
+    link: "youtube.com/@codingdestro",
+    img: "/youtube.png",
+  },
+];
 
 const Logo = ({ img, url }: { img: string; url: string }) => (
   <div>
@@ -13,7 +32,7 @@ const Logo = ({ img, url }: { img: string; url: string }) => (
 const About = () => {
   return (
     <Section id="about me" className="x" heading="About Me">
-      <div className="flex w-full max-w-[1024px] px-5 py-9 items-start justify-between">
+      <div className="flex flex-wrap w-full max-w-[800px] px-2 py-9 gap-5 items-start justify-between">
         <div className="break-words text-wrap  max-w-[30rem]">
           <h3 className="text-lg font-semibold">Hi, I&apos;m Mohd Anas,</h3>
           <p className="text-sm text-slate-600">
@@ -22,26 +41,32 @@ const About = () => {
             back-end functionality. Let&apos;s connect and explore the world of
             web development together!
           </p>
-          <div className="flex items-center gap-x-4 mt-9">
-            <Logo img="/github.png" url="//github.com/codingdestro" />
-            <Logo img="/linkedin.png" url="/" />
-            <Logo img="/x.png" url="/" />
-            <Logo img="/insta.png" url="/" />
-            <Logo img="/upwork.png" url="/" />
-          </div>
         </div>
         <div>
           <h3 className="text-redish text-xl font-semibold underline underline-offset-4">
             Contact Me
           </h3>
-          <div className="">
-            <p>+91 9193-19-5759</p>
-            <p>www.codingdestro.dev</p>
-            <p>codingdestro@gmail.com</p>
-            <p>
-              youtube.com/<span className="text-sm">@</span>codingdestro
-            </p>
+          <div className="text-sm mt-5 flex flex-col gap-y-3">
+            {contactInfo.map(
+              (val: { link: string; img: string }, idx: number) => (
+                <div key={idx} className="flex gap-x-2 items-center">
+                  <span
+                    className="w-4 h-4 bg-contain bg-center "
+                    style={{ backgroundImage: `url('${val.img}')` }}
+                  ></span>
+                  <p>{val.link}</p>
+                </div>
+              ),
+            )}
           </div>
+        </div>
+
+        <div className="flex items-center justify-center flex-1  gap-x-4 mt-9">
+          <Logo img="/github.png" url="//github.com/codingdestro" />
+          <Logo img="/linkedin.png" url="/" />
+          <Logo img="/x.png" url="/" />
+          <Logo img="/insta.png" url="/" />
+          <Logo img="/upwork.png" url="/" />
         </div>
       </div>
       <div className="w-[90%] border-t-[3px] text-center py-3">

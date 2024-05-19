@@ -5,10 +5,10 @@ import Particle from "../ui/particle";
 
 const Hero = () => {
   return (
-    <section id="#home" className="min-h-section  ">
+    <section id="#home" className="min-h-section overflow-hidden ">
       <div className="absolute"></div>
-      <div className="flex  translate-y-[200px] items-center justify-center gap-x-[12rem]">
-        <div className="flex flex-col gap-y-5 ">
+      <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
+        <div className="flex max-w-[370px] flex-col gap-y-5 ">
           <div>
             <h1 className={`${playfair.className} text-[56px]`}>
               HI, <br />
@@ -22,8 +22,9 @@ const Hero = () => {
             <Button className="rounded-full">Download CV</Button>
           </div>
         </div>
+
         <div>
-          <div className="h-[400px]  w-[400px] flex items-center justify-center">
+          <div className="h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
             <img src={"/ellipse.svg"} alt="image bg ovel" />
           </div>
         </div>
