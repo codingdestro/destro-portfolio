@@ -17,10 +17,16 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <div
-      className={`border flex ${props.id % 2 !== 0 && "flex-row-reverse"}  h-[18rem] items-center justify-between  rounded-[40px] gap-x-5 shadow-lg w-[880px] overflow-hidden`}
+      className={`border flex flex-col p-5 items-center justify-between  rounded-[40px] gap-y-5 shadow-lg w-[360px] overflow-hidden`}
     >
-      <div className="flex-1 ">
-        <div className="pl-9 flex flex-col">
+      <div className="w-full flex items-center justify-center px-5">
+        <div
+          className="w-[300px] h-[200px] bg-no-repeat bg-cover"
+          style={{ backgroundImage: `url(${props.image})` }}
+        />
+      </div>
+      <div className=" border-t pt-5 border-t-slate-400 w-full">
+        <div className="flex flex-col">
           <h1
             className={`${raleway.className} text-2xl capitalize font-semibold`}
           >
@@ -32,12 +38,6 @@ const Card = (props: Props) => {
             View Project
           </Button>
         </div>
-      </div>
-      <div className="flex-1 bg-red-50 h-full">
-        <div
-          className="w-full h-full bg-no-repeat bg-cover"
-          style={{ backgroundImage: `url(${props.image})` }}
-        />
       </div>
     </div>
   );

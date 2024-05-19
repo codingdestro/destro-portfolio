@@ -8,8 +8,8 @@ import ScrollDiv from "../ui/scrollDiv";
 
 const Projects = () => {
   return (
-    <Section heading="My Projects" id="projects" className="">
-      <div className="w-full  py-5 flex flex-col items-center h-full gap-y-32 mt-12 overflow-hidden">
+    <Section heading="My Projects" id="projects" className=" x">
+      <div className="py-5 flex flex-col items-center h-full gap-y-5 mt-12 overflow-hidden">
         {projectData.map((project: ProjectsType, idx: number) => (
           <div key={idx}>
             <ScrollDiv

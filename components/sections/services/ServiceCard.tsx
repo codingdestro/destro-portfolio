@@ -8,7 +8,7 @@ interface Props extends service {
 
 const ServiceCard = ({ style, title, subTitle, price, points }: Props) => (
   <div
-    className={`flex bg-white flex-col items-center gap-y-4 justify-between min-h-[600px] w-[390px] border shadow-lg px-5 py-6 rounded-lg ${style || ""}`}
+    className={`flex bg-white flex-col items-center gap-y-4 justify-between h-[500px] w-[350px] border shadow-lg px-5 py-6 rounded-lg ${style || ""}`}
   >
     <div className="text-center">
       <h2 className={`${playfair.className} text-[44px] font-semibold`}>
