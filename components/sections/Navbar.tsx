@@ -35,7 +35,10 @@ const Navbar = () => {
       <div className="block md:hidden">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button>Menu</Button>
+            <button
+              className="w-9 h-8 border bg-center bg-contain bg-no-repeat"
+              style={{ backgroundImage: "url('/hamburger.png')" }}
+            ></button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="bg-white w-[300px] z-40 rounded-lg border py-5 mt-4 mr-5 min-h-[200px] px-2">
             {links.map((val: string, idx: number) => (
