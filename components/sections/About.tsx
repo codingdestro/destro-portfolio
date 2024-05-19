@@ -63,10 +63,16 @@ const About = () => {
 
         <div className="flex items-center justify-center flex-1  gap-x-4 mt-9">
           <Logo img="/github.png" url="//github.com/codingdestro" />
-          <Logo img="/linkedin.png" url="/" />
-          <Logo img="/x.png" url="/" />
-          <Logo img="/insta.png" url="/" />
-          <Logo img="/upwork.png" url="/" />
+          <Logo
+            img="/linkedin.png"
+            url="//www.linkedin.com/in/mohd-anas-608225255/"
+          />
+          <Logo img="/x.png" url="//x.com/codingdestro" />
+          <Logo img="/insta.png" url="//www.instagram.com/anas_bin_naazir/" />
+          <Logo
+            img="/upwork.png"
+            url="//www.upwork.com/freelancers/~01bfc0d6207a18e651"
+          />
         </div>
       </div>
       <div className="w-[90%] border-t-[3px] text-center py-3">
