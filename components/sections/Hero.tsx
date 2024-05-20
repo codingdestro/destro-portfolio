@@ -30,9 +30,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <div>
-          <div className="h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
-            <img src={"/ellipse.svg"} alt="image bg ovel" />
+        <div className="">
+          <div className="overflow-hidden rounded-full  h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
+            <img src={"/profile-pic.jpg"} alt="image bg ovel" />
           </div>
         </div>
       </div>
