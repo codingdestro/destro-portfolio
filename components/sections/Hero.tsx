@@ -7,9 +7,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section id="#home" className="min-h-section overflow-hidden ">
-      <div className="absolute">
-        <Particle />
-      </div>
+      <div className="absolute blur-[3px]"></div>
       <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
         <div className="flex max-w-[370px] flex-col gap-y-5 ">
           <div>
