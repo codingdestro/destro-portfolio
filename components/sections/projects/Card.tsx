@@ -17,7 +17,7 @@ interface Props {
 const Card = (props: Props) => {
   return (
     <div
-      className={`border flex flex-col p-5 items-center justify-between  rounded-[40px] gap-y-5 shadow-lg w-[360px] overflow-hidden`}
+      className={`border flex flex-col p-5 items-center justify-between  rounded-xl gap-y-5 shadow-lg w-[360px] overflow-hidden`}
     >
       <div className="w-full flex items-center justify-center px-5">
         <div
