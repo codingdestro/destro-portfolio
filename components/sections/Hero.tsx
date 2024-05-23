@@ -7,7 +7,9 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section id="#home" className="min-h-section overflow-hidden ">
-      <div className="absolute blur-[3px]"></div>
+      <div className="absolute blur-3xl">
+        <Particle />
+      </div>
       <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
         <div className="flex max-w-[370px] flex-col gap-y-5 ">
           <div>
@@ -29,7 +31,7 @@ const Hero = () => {
         </div>
 
         <div className="">
-          <div className="overflow-hidden rounded-full  h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
+          <div className=" overflow-hidden rounded-full  h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
             <img src={"/profile-pic.jpg"} alt="image bg ovel" />
           </div>
         </div>

@@ -1,4 +1,7 @@
 import React, { useRef, useEffect } from "react";
+const getRandom = (min: number, max: number) => {
+  return Math.random() * (max - min) + min;
+};
 
 const Particle = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -8,7 +11,6 @@ const Particle = () => {
     const ctx = canvas.getContext("2d")!;
     canvas.width = window.innerWidth - 15;
     canvas.height = window.innerHeight - 100;
-    ctx.strokeStyle = "#00000001";
 
     // Create Particle Class
     class Particle {
@@ -55,26 +57,26 @@ const Particle = () => {
         // Check collision detection - mouse position / particle position
         //
 
-        for (let a = 0; a < particlesArray.length; a++) {
-          for (let b = a; b < particlesArray.length; b++) {
-            const dx = particlesArray[a].x - particlesArray[b].x;
-            const dy = particlesArray[a].y - particlesArray[b].y;
-            const distance = Math.hypot(dx, dy);
-
-            if (distance < 200) {
-              ctx.save();
-              ctx.strokeStyle = "#00000001";
-              const opacity = 1 - distance / 100;
-              ctx.globalAlpha = opacity;
-              ctx.beginPath();
-              ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-              ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-              ctx.stroke();
-              ctx.restore();
-            }
-          }
-        }
-
+        // for (let a = 0; a < particlesArray.length; a++) {
+        //   for (let b = a; b < particlesArray.length; b++) {
+        //     const dx = particlesArray[a].x - particlesArray[b].x;
+        //     const dy = particlesArray[a].y - particlesArray[b].y;
+        //     const distance = Math.hypot(dx, dy);
+        //
+        //     if (distance < 200) {
+        //       ctx.save();
+        //       ctx.strokeStyle = "#00000001";
+        //       const opacity = 1 - distance / 100;
+        //       ctx.globalAlpha = opacity;
+        //       ctx.beginPath();
+        //       ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+        //       ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+        //       ctx.stroke();
+        //       ctx.restore();
+        //     }
+        //   }
+        // }
+        //
         // Move particle
         this.x += this.directionX;
         this.y += this.directionY;
@@ -89,20 +91,20 @@ const Particle = () => {
     // Create particle array
     function init() {
       particlesArray = [];
-      const numberOfParticles = (canvas.width * canvas.height) / 26000;
+      const numberOfParticles = Math.floor((innerWidth * innerHeight) / 170000);
       for (let i = 0; i < numberOfParticles; i++) {
-        const size = Math.random() * 10 + 1;
-        const x = Math.random() * (innerWidth - size * 2) + size * 2;
-        const y = Math.random() * (innerHeight - size * 2) + size * 2;
-        const directionX = Math.random() * 5 - 2.5;
-        const directionY = Math.random() * 5 - 2.5;
-        const color = "#36454F";
+        const size = getRandom(50, 90);
+        const x = Math.random() * (innerWidth - size * 3) + size * 2;
+        const y = Math.random() * (innerHeight - size * 3) + size * 2;
+        const directionX = Math.random() * 5 - 1.5;
+        const directionY = Math.random() * 5 - 1.5;
+        const color = `hsl(${getRandom(100, 250)},100%,50%)`;
 
+        ctx.strokeStyle = color;
         particlesArray.push(
           new Particle(x, y, directionX, directionY, size, color),
         );
       }
-      ctx.strokeStyle = "#00000001";
     }
 
     // Animation loop
