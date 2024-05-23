@@ -91,10 +91,9 @@ const Particle = () => {
     // Create particle array
     function init() {
       particlesArray = [];
-      const numberOfParticles = 9;
+      const numberOfParticles = Math.floor((innerWidth * innerHeight) / 170000);
       for (let i = 0; i < numberOfParticles; i++) {
-        const size = getRandom(90, 130);
-        // const size = Math.random() * 50 + 1;
+        const size = getRandom(50, 90);
         const x = Math.random() * (innerWidth - size * 3) + size * 2;
         const y = Math.random() * (innerHeight - size * 3) + size * 2;
         const directionX = Math.random() * 5 - 1.5;
