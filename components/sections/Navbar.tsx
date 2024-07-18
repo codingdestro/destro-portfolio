@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
 import LinkButton from "../ui/linkButton";
-import { playfair, raleway } from "@/app/fonts";
 import { DropdownMenu } from "@/components/ui/dropdown-menu";
 import {
   DropdownMenuContent,

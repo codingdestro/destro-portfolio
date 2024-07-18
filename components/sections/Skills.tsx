@@ -1,4 +1,3 @@
-import { playfair } from "@/app/fonts";
 import Section from "../template/Section";
 import { skills } from "@/data/skills";
 import ScrollDiv from "../ui/scrollDiv";
@@ -25,7 +24,7 @@ const Skills = () => {
               className={`border rounded-lg p-5 shadow-md ${idx % 2 !== 0 && "text-right"}`}
             >
               <h3
-                className={`capitalize ${playfair.className}  text-2xl font-semibold underline`}
+                className={`capitalize font-Georgia  text-2xl font-semibold `}
               >
                 {skill.name}
               </h3>
