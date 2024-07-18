@@ -17,6 +17,12 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        Georgia: "Georgia Regular",
+        "Georgia-bold": "Georgia Bold ",
+        "Georgia-italic": "Georgia Italic ",
+        "Georgia-z": "Georgia Bold Italic",
+      },
       minHeight: {
         section: "calc(100vh - 64px)",
       },
