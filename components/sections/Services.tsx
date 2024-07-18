@@ -1,7 +1,4 @@
-import { playfair } from "@/app/fonts";
 import Section from "../template/Section";
-import { Button } from "../ui/button";
-import { title } from "process";
 import services from "@/data/services";
 import ServiceCard from "./services/ServiceCard";
 import { service } from "@/data/services";
