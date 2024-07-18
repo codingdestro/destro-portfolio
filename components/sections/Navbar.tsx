@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import LinkButton from "../ui/linkButton";
@@ -11,11 +12,13 @@ import {
 } from "@radix-ui/react-dropdown-menu";
 
 const Navbar = () => {
-  const links = ["home", "projects", "education", "skills", "about me"];
+  const links = ["home", "education", "skills", "projects", "about me"];
   return (
     <>
       <div className="w-full fixed flex items-center justify-between py-3 px-5 bg-secondary z-10">
-        <div className={`text-2xl font-Georgia-bold`}>CodingDestro</div>
+        <Link href={"/"} className={`text-2xl font-Georgia-bold`}>
+          CodingDestro
+        </Link>
         {
           <div className={` items-center gap-x-3 hidden md:flex`}>
             {links.map((link: string, idx: number) => (

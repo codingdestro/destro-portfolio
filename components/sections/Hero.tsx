@@ -4,11 +4,14 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="#home" className="min-h-screen overflow-hidden ">
-      <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
-        <div className="flex max-w-[370px] flex-col gap-y-5 ">
+    <section
+      id="#home"
+      className="min-h-screen overflow-hidden flex justify-center items-center"
+    >
+      <div className="flex flex-wrap gap-5 items-center justify-evenly ">
+        <div className="flex max-w-[380px] flex-col gap-y-5 ">
           <div>
-            <h1 className={`font-Georgia-bold text-[6vw]`}>
+            <h1 className={`font-Georgia-bold text-[4em]`}>
               HI, <br />
               I&apos;m <span className="text-redish">Mohd Anas</span>
             </h1>
