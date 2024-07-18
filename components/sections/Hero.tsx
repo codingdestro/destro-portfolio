@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="#home" className="min-h-section overflow-hidden ">
+    <section id="#home" className="min-h-screen overflow-hidden ">
       <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
         <div className="flex max-w-[370px] flex-col gap-y-5 ">
           <div>
