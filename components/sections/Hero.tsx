@@ -1,7 +1,5 @@
-import { playfair } from "@/app/fonts";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import Particle from "../ui/particle";
 import Link from "next/link";
 
 const Hero = () => {
@@ -10,9 +8,9 @@ const Hero = () => {
       <div className="flex flex-wrap gap-5 translate-y-[20%] items-center justify-evenly ">
         <div className="flex max-w-[370px] flex-col gap-y-5 ">
           <div>
-            <h1 className={`${playfair.className} text-[56px]`}>
+            <h1 className={`font-Georgia-bold text-[6vw]`}>
               HI, <br />
-              I&apos;m <span className="text-redish font-bold">Mohd Anas</span>
+              I&apos;m <span className="text-redish">Mohd Anas</span>
             </h1>
             <p className="text-center">
               A full-stack web developer based in India
@@ -29,7 +27,12 @@ const Hero = () => {
 
         <div className="">
           <div className=" overflow-hidden rounded-full  h-[300px] md:w-[400px] md:h-[400px]  w-[300px] flex items-center justify-center">
-            <img src={"/profile-pic.jpg"} alt="image bg ovel" />
+            <Image
+              src={"/profile-pic.jpg"}
+              alt="profice image"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
       </div>
